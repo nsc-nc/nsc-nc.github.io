@@ -1614,12 +1614,12 @@ margin-left: 15px;
 }
 @media screen and (min-width: 1400px) {
   .stastistical-part .content .statistics .rounded-icon {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
 }
 .stastistical-part .content .statistics .pieChart {
   position: relative;
-  margin: 0 auto 3em;
+  margin: 0 auto 4em;
   width: 280px;
   height: 280px;
 }
@@ -1899,7 +1899,7 @@ margin-left: 15px;
 }
 .stastistical-part .content .statistics .pieChart-list {
   width: 280px;
-  margin: 2em auto 0;
+  margin: 2em auto 5px;
 }
 .stastistical-part .content .statistics .pieChart-list li {
   line-height: 1.6em;
@@ -2416,6 +2416,9 @@ margin-left: 15px;
 
 
 /* Testimonials */
+
+
+
 .testimonials-part .testimonials-part-section-seperator{
             background-image: url(../images/clients.jpg);
           }
@@ -2682,6 +2685,11 @@ margin-left: 15px;
 }
 
 /* Pricing */
+@media (min-width: 1020px) {
+  .pricing-container {
+    height: 500px;
+  }
+}
 .pricing-part .section-seperator{
   background-image: url(../images/appartment.jpg);
   }
@@ -2845,6 +2853,10 @@ margin-left: 15px;
 
 /*Important Tips */
 
+section#tips-part {
+  margin-bottom: 2em;
+}
+
 .tips-part .section-seperator{
   background-image: url(../images/tips.jpg);
   }
@@ -2872,7 +2884,7 @@ margin-left: 15px;
 }
 .tips-part .content .content-template {
   max-width: 46.875em;
-  margin: auto;
+  margin: auto auto 2em;
 }
 .tips-part .content .content-template p {
   margin-bottom: 1.5em;
