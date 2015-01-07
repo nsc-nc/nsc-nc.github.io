@@ -13,7 +13,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
-footer, header, headergroup, menu, nav, section, summary,
+footer, header, .headergroup, menu, nav, section, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -36,7 +36,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, headergroup, menu, nav, section {
+footer, header, .headergroup, menu, nav, section {
   display: block;
 }
 
@@ -475,17 +475,17 @@ p {
   margin-right:5px; 
 }
 
-.headergroup {
+/*..headergroup {
   margin-bottom: 1.5em;
-}
+}*/
 
 .bottom-margin{
   margin-bottom: 100px;
 }
-headergroup h3 {
+.headergroup h3 {
   text-align: center;
 }
-headergroup:after {
+.headergroup:after {
   content: '';
   display: block;
   width: 90px;
@@ -493,28 +493,31 @@ headergroup:after {
   margin: 1.5em auto 0;
   background: rgba(255, 255, 255, 0.19);
 }
+span.paragraph-text{
+  color: #8a8a8a;
+}
 
 .section-intro h1 .seconday, .section-intro h1 .em, .section-intro h1 .section-team .team-members li .team-member-title .em, .section-team .team-members li .team-member-title .section-intro h1 .em, .section-intro h1 .section-brand .guidelines .columns .colors ul li .em, .section-brand .guidelines .columns .colors ul li .section-intro h1 .em,
 .section-intro h1 .main,
-headergroup h2 .seconday,
-headergroup h2 .em,
-headergroup h2 .h1 .em,
-.h1 headergroup h2 .em,
-headergroup h2 .h2 .em,
-.h2 headergroup h2 .em,
-headergroup h2 .section-team .team-members li .team-member-title .em,
-.section-team .team-members li .team-member-title headergroup h2 .em,
-headergroup h2 .h3 .em,
-.h3 headergroup h2 .em,
-headergroup h2 .section-brand .guidelines .columns .colors ul li .em,
-.section-brand .guidelines .columns .colors ul li headergroup h2 .em,
-headergroup h2 .h4 .em,
-.h4 headergroup h2 .em,
-headergroup h2 .h5 .em,
-.h5 headergroup h2 .em,
-headergroup h2 .h6 .em,
-.h6 headergroup h2 .em,
-headergroup h2 .main {
+.headergroup h2 .seconday,
+.headergroup h2 .em,
+.headergroup h2 .h1 .em,
+.h1 .headergroup h2 .em,
+.headergroup h2 .h2 .em,
+.h2 .headergroup h2 .em,
+.headergroup h2 .section-team .team-members li .team-member-title .em,
+.section-team .team-members li .team-member-title .headergroup h2 .em,
+.headergroup h2 .h3 .em,
+.h3 .headergroup h2 .em,
+.headergroup h2 .section-brand .guidelines .columns .colors ul li .em,
+.section-brand .guidelines .columns .colors ul li .headergroup h2 .em,
+.headergroup h2 .h4 .em,
+.h4 .headergroup h2 .em,
+.headergroup h2 .h5 .em,
+.h5 .headergroup h2 .em,
+.headergroup h2 .h6 .em,
+.h6 .headergroup h2 .em,
+.headergroup h2 .main {
   opacity: 0;
   -webkit-transform: translateY(-0.5em);
   -moz-transform: translateY(-0.5em);
@@ -523,41 +526,41 @@ headergroup h2 .main {
   transform: translateY(-0.5em);
 }
 .section-intro h1 .seconday, .section-intro h1 .em, .section-intro h1 .section-team .team-members li .team-member-title .em, .section-team .team-members li .team-member-title .section-intro h1 .em, .section-intro h1 .section-brand .guidelines .columns .colors ul li .em, .section-brand .guidelines .columns .colors ul li .section-intro h1 .em,
-headergroup h2 .seconday,
-headergroup h2 .em,
-headergroup h2 .h1 .em,
-.h1 headergroup h2 .em,
-headergroup h2 .h2 .em,
-.h2 headergroup h2 .em,
-headergroup h2 .section-team .team-members li .team-member-title .em,
-.section-team .team-members li .team-member-title headergroup h2 .em,
-headergroup h2 .h3 .em,
-.h3 headergroup h2 .em,
-headergroup h2 .section-brand .guidelines .columns .colors ul li .em,
-.section-brand .guidelines .columns .colors ul li headergroup h2 .em,
-headergroup h2 .h4 .em,
-.h4 headergroup h2 .em,
-headergroup h2 .h5 .em,
-.h5 headergroup h2 .em,
-headergroup h2 .h6 .em,
-.h6 headergroup h2 .em {
+.headergroup h2 .seconday,
+.headergroup h2 .em,
+.headergroup h2 .h1 .em,
+.h1 .headergroup h2 .em,
+.headergroup h2 .h2 .em,
+.h2 .headergroup h2 .em,
+.headergroup h2 .section-team .team-members li .team-member-title .em,
+.section-team .team-members li .team-member-title .headergroup h2 .em,
+.headergroup h2 .h3 .em,
+.h3 .headergroup h2 .em,
+.headergroup h2 .section-brand .guidelines .columns .colors ul li .em,
+.section-brand .guidelines .columns .colors ul li .headergroup h2 .em,
+.headergroup h2 .h4 .em,
+.h4 .headergroup h2 .em,
+.headergroup h2 .h5 .em,
+.h5 .headergroup h2 .em,
+.headergroup h2 .h6 .em,
+.h6 .headergroup h2 .em {
   -webkit-transition: 0.4s ease-out 0.25s;
   transition: 0.4s ease-out 0.25s;
 }
 .section-intro h1 .main,
-headergroup h2 .main {
+.headergroup h2 .main {
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
 }
 .section-intro h1.in-point .seconday, .section-intro h1.in-point .em, .section-intro h1.in-point .section-team .team-members li .team-member-title .em, .section-team .team-members li .team-member-title .section-intro h1.in-point .em, .section-intro h1.in-point .section-brand .guidelines .columns .colors ul li .em, .section-brand .guidelines .columns .colors ul li .section-intro h1.in-point .em,
 .section-intro h1.in-point .main,
-headergroup h2.in-point .seconday,
-headergroup h2.in-point .em,
-headergroup h2.in-point .section-team .team-members li .team-member-title .em,
-.section-team .team-members li .team-member-title headergroup h2.in-point .em,
-headergroup h2.in-point .section-brand .guidelines .columns .colors ul li .em,
-.section-brand .guidelines .columns .colors ul li headergroup h2.in-point .em,
-headergroup h2.in-point .main {
+.headergroup h2.in-point .seconday,
+.headergroup h2.in-point .em,
+.headergroup h2.in-point .section-team .team-members li .team-member-title .em,
+.section-team .team-members li .team-member-title .headergroup h2.in-point .em,
+.headergroup h2.in-point .section-brand .guidelines .columns .colors ul li .em,
+.section-brand .guidelines .columns .colors ul li .headergroup h2.in-point .em,
+.headergroup h2.in-point .main {
   opacity: 1;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -1395,7 +1398,7 @@ margin-left: 15px;
 .stastistical-part .content {
   text-align: center;
 }
-.stastistical-part .content headergroup {
+.stastistical-part .content .headergroup {
   font-size: 1.1em;
 }
 .stastistical-part .content .intro {
@@ -2774,15 +2777,15 @@ margin-left: 15px;
 .pricing-part .pricing-container .pricing-wrapper .pricing-slide {
   margin-bottom: 3em;
 }
-.pricing-part .pricing-container .pricing-wrapper .pricing-slide headergroup {
+.pricing-part .pricing-container .pricing-wrapper .pricing-slide .headergroup {
   font-size: 0.8em;
 }
-.pricing-part .pricing-container .pricing-wrapper .pricing-slide headergroup h3 {
+.pricing-part .pricing-container .pricing-wrapper .pricing-slide .headergroup h3 {
   font-family: "dubielitalic", Arial, sans-serif;
   font-size: 2.75em;
   text-transform: none;
 }
-.pricing-part .pricing-container .pricing-wrapper .pricing-slide headergroup h3 .seconday, .pricing-part .pricing-container .pricing-wrapper .pricing-slide headergroup h3 .em, .pricing-part .pricing-container .pricing-wrapper .pricing-slide headergroup h3 .section-team .team-members li .team-member-title .em, .section-team .team-members li .team-member-title .pricing-part .pricing-container .pricing-wrapper .pricing-slide headergroup h3 .em, .pricing-part .pricing-container .pricing-wrapper .pricing-slide headergroup h3 .section-brand .guidelines .columns .colors ul li .em, .section-brand .guidelines .columns .colors ul li .pricing-part .pricing-container .pricing-wrapper .pricing-slide headergroup h3 .em {
+.pricing-part .pricing-container .pricing-wrapper .pricing-slide .headergroup h3 .seconday, .pricing-part .pricing-container .pricing-wrapper .pricing-slide .headergroup h3 .em, .pricing-part .pricing-container .pricing-wrapper .pricing-slide .headergroup h3 .section-team .team-members li .team-member-title .em, .section-team .team-members li .team-member-title .pricing-part .pricing-container .pricing-wrapper .pricing-slide .headergroup h3 .em, .pricing-part .pricing-container .pricing-wrapper .pricing-slide .headergroup h3 .section-brand .guidelines .columns .colors ul li .em, .section-brand .guidelines .columns .colors ul li .pricing-part .pricing-container .pricing-wrapper .pricing-slide .headergroup h3 .em {
   font-size: 0.8em;
 }
 .pricing-part .pricing-container .pricing-wrapper .pricing-slide p {
